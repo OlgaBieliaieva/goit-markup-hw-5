@@ -637,17 +637,17 @@ footer .social-link-item:focus {
 .agreement {
   position: relative;
   margin-left: 24px;
-  display: block;  
+  display: flex;  
   align-items: center;
   color: var(--modal-form);
   font-size: var(--small-text);
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
-.checkbox {
+/* .checkbox {
   position: absolute;
   appearance: none;
-}
+} */
 .checkbox-span {
   position: absolute;
   top: 0;
