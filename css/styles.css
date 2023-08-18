@@ -669,7 +669,7 @@ footer .social-link-item:focus {
   letter-spacing: 0.48px;
   text-decoration: underline;
 }
-.checkbox:checked + .checkbox-span {
+.checkbox:checked + .agreement > .checkbox-span {
   fill: var(--light);
   background-color: var(--hover-brand);
   border: none;
