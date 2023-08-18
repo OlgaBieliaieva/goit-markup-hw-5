@@ -583,7 +583,7 @@ footer .social-link-item:focus {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;  
+  border-radius: 4px;
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
@@ -618,7 +618,7 @@ footer .social-link-item:focus {
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
-  border-radius: 4px;  
+  border-radius: 4px;
   cursor: pointer;
   background-color: transparent;
   color: rgba(46, 47, 66, 0.4);
@@ -637,31 +637,35 @@ footer .social-link-item:focus {
 .agreement {
   position: relative;
   margin-left: 24px;
-  display: flex;  
+  display: block;
   align-items: center;
   color: var(--modal-form);
   font-size: var(--small-text);
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
-/* .checkbox {
-  position: absolute;
-  appearance: none;
-} */
+
 .checkbox-span {
   position: absolute;
   top: 0;
   left: -24px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
   width: 16px;
-  height: 16px;  
-  cursor: pointer;  
+  height: 16px;
+  cursor: pointer;
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);  
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+}
+.checkbox:checked + .agreement > .checkbox-span {
+  fill: var(--light);
+  background-color: var(--hover-brand);
+  border: none;
 }
 .conditions-link {
   display: block;
@@ -669,11 +673,7 @@ footer .social-link-item:focus {
   letter-spacing: 0.48px;
   text-decoration: underline;
 }
-.checkbox:checked + .agreement > .checkbox-span {
-  fill: var(--light);
-  background-color: var(--hover-brand);
-  border: none;
-}
+
 .form-button {
   display: block;
   margin: 0 auto;
