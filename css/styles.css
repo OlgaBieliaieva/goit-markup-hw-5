@@ -635,8 +635,7 @@ footer .social-link-item:focus {
   margin-bottom: 24px;
 }
 .agreement {
-  position: relative;
-  margin-left: 24px;
+  position: relative;  
   display: block;
   align-items: center;
   color: var(--modal-form);
@@ -646,12 +645,9 @@ footer .social-link-item:focus {
 }
 
 .checkbox-span {
-  position: absolute;
-  top: 0;
-  left: -24px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
   fill: transparent;
   width: 16px;
   height: 16px;
